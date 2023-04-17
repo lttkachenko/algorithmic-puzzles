@@ -1,17 +1,34 @@
-# Getting Started with Tea-Code Test Application
+# Algorithmic Puzzles repo and Sandbox Application
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 So all the setup process and scripts available here are the standard ones.
 
+However, this repo contains not only React Showcase application (**TBD** soon) but command-line (**CLI**) sandbox.
+This sandbox allows you to run any of **Node.JS Typescript** (**TS-Node**) functions belong to **Puzzles** and **Libs** namespaces
+by just typing their names inside the interactive console string, including all the arguments required.<br />
+You can run **CLI Sandbox** application in default (run once) or daemon-like modes, allowing you to repeat function call any time you need
+without re-running the CLI application for that.
+
 ## Setup
 
-### `yarn`
+#### `yarn`
 
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `yarn start`
+## Sandbox CLI:
+
+#### `run.js`
+
+You can run this Sandbox CLI application with the following params:
+
+- `--daemon=true`, `-daemon=false` (default: false) - whether to run the function once and die or ask you to run the other one each time the current one is executed;
+- `--verbose=true`, `--verbose=false` (default: false) - whether to show additional verbose console output with params parsing, debug, etc.
+
+### React CLI:
+
+#### `yarn start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -19,12 +36,12 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### `yarn test`
+#### `yarn test`
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
+#### `yarn build`
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
@@ -34,7 +51,7 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
+#### `yarn eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
