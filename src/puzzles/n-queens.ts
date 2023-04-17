@@ -50,7 +50,7 @@ export const nQueens = (size = 8, drawBoard = false, verbose = false): unknown[]
 
   let output: unknown[];
 
-  if (drawBoard) {
+  if (drawBoard) { // @TODO: Implement Board generation for the React showcase page
     output = [...Array(n)].map(row => {
       return [...Array(n)].map(col => '[]');
     });

@@ -45,7 +45,7 @@ export const run = () => {
         throw new Error(message);
       }
 
-      exec.apply(this, args);
+      console.log(exec.apply(this, args));
 
       if (argv.daemon) run();
     });
